@@ -51,6 +51,11 @@ class Game{
             index = index+1;
             x = 500-allPlayers[plr].distance;
             y=500;
+           
+            textAlign(CENTER);
+            textSize(20);
+            fill("red");
+            text(allPlayers[plr].name, players[index - 1].x, players[index - 1].y + 75);
             
             players[index -1].x = x;
             players[index - 1].y = y;
